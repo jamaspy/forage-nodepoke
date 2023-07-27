@@ -8,6 +8,9 @@
 # cd into the root and install dependencies
 npm i
 
+# ensure you are using node < v18 (I think...)
+nvm use 18
+
 # build and serve the app
 npm run build
 
