@@ -5,9 +5,19 @@ import { NavItem } from "./NavItem";
 import { HiOutlineLogout } from "react-icons/hi";
 import { logout } from "@/lib/auth/logout";
 import { useRouter } from "next/navigation";
+import { useIsSsr } from "@/hooks/useSsr";
 
 export const Nav = () => {
   const router = useRouter();
+  const isSsr = useIsSsr();
+
+  // Check user is logged in
+  if (!isSsr) {
+    if (!localStorage.getItem("user")) {
+      console.log("User Not Logged In");
+      router.push("/auth/login");
+    }
+  }
 
   const handleLogout = async (e: any) => {
     e.preventDefault();
