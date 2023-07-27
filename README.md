@@ -22,11 +22,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Know Issues
 
-**1. Mocking `useRouter()` in tests**
+**1.Navigating from Profile page to Favourite**
+
+If you are on the `/pokemon/id` page and you navigate to the `/favourites` page if causes an error. I think this is because the `useRouter()` hook is not available on the server. I would have liked to have fixed this but I ran out of time.
+
+**2. Mocking `useRouter()` in tests**
 
 I wanted to use the latest version on NextJS (v13). I struggled to find away to successful mock the `useRouter()` used on the Login test. The test is there but commented out.
 
-**2. Auth - Checking user logged in**
+**3. Auth - Checking user logged in**
 
 I tested this and it wasn't working the way I wanted it to, but I ran out of time. I would have liked to have added a check to see if the user was logged in and if not redirect them to the login page.
 
