@@ -54,4 +54,11 @@ So I have tried to show the following:
 
 ---
 
+## Screenshots
+
+![Alt text](./public/readme/1.png "Login")
+![Alt text](./public/readme/2.png "Home")
+![Alt text](./public/readme/3.png "Details")
+![Alt text](./public/readme/4.png "Favorites")
+
 # Thank you for your time
