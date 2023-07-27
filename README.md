@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# James Aspinall | Frontend Developer
 
 ## Getting Started
 
-First, run the development server:
+### **It is best to view with it served. You can run the server with the following command.**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# cd into the root and install dependencies
+npm i
+
+# build and serve the app
+npm run build
+
+# then
+npm run start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Know Issues
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**1. Mocking `useRouter()` in tests**
 
-## Learn More
+I wanted to use the latest version on NextJS (v13). I struggled to find away to successful mock the `useRouter()` used on the Login test. The test is there but commented out.
 
-To learn more about Next.js, take a look at the following resources:
+**2. Auth - Checking user logged in**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I tested this and it wasn't working the way I wanted it to, but I ran out of time. I would have liked to have added a check to see if the user was logged in and if not redirect them to the login page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- NextJS (v13)
+- Typescript
+- TailwindCSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Approach
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I want to demonstrate as many things as I could in the timeframe.
+So I have tried to show the following:
+
+- Custom Hooks
+- Server Components
+- Testing
+- Typescript
+- CSS/Responsive Design
+
+## What I would do next
+
+- Add more tests (test `useRouter`)
+- Make it more responsive
+- Make the search/filter better
+- Replace the x-scroll on the rows with a Carousel
+- Use a database instead of local storage (Primsa, Apollo, RailwayDB)
+
+---
+
+# Thank you for your time

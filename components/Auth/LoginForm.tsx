@@ -4,7 +4,7 @@ import { InputRow } from "../Forms";
 import { PrimaryButton } from "../Buttons";
 import { Login } from "@/lib/auth/login";
 import { useRouter } from "next/navigation";
-import classNames from "classnames";
+
 export const LoginForm = () => {
   const router = useRouter();
   const [email, setEmail] = React.useState("");
