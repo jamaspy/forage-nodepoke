@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { getFavouritePokemon } from "@/lib/pokemons";
 export const useFavouritePokemon = () => {
-  const [likedPokemons, setLikedPokemons] = React.useState([]);
-  const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState(false);
-  const [refetch, setRefetch] = React.useState(false);
+  const [likedPokemons, setLikedPokemons] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [refetch, setRefetch] = useState(false);
 
   const handleRefetch = () => {
     setRefetch(!refetch);

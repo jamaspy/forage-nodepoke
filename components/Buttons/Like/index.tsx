@@ -26,7 +26,7 @@ export const LikeButton = ({ id }: { id: number }) => {
       }
     };
     checkLiked();
-  }, [id, liked]);
+  }, [id]);
 
   return (
     <button
